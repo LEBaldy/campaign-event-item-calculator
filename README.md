@@ -1,0 +1,2 @@
+# campaign-event-item-calculator
+ Given an input time remaining and current, spent, and purchased campaign items, the calculator will output the average rate prediction for campaign drop event with a range of error.. It will also give the prediction based on current rate so far into the event. It also gives the probability of the current rate so far and the current rate staying until the end of the event.
