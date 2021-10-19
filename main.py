@@ -33,8 +33,7 @@ try:
     if (refund == True):
       currentamount = input("How many campaign items do you currently have?\nIf the negative number was due to a refund, please type \"refund\" below.\n")
       try:
-        if (str.lower(currentamount) != "refund"
-            or str.lower(currentamount) != "refund"):
+        if (str.lower(currentamount) != "refund" or str.lower(currentamount) != "refund"):
           currentamount = currentrefundamount
       except Exception as nostring:
         refund = False
