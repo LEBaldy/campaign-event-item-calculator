@@ -107,12 +107,12 @@ try:
     hoursleft = hours + minutes / 60 - 24
     daynumber = math.ceil(7 - hoursleft / 24)
 
-    estimateaverage = math.floor(current + hoursleft * 10.56 +(7 - dayNumber) * 100)
-    estimatecurrent = math.floor(current + (f2pamount - dayNumber * 100) /(168 - hoursleft) * hoursleft +(7 - dayNumber) * 100)
+    estimateaverage = math.floor(current + hoursleft * 10.56 +(7 - daynumber) * 100)
+    estimatecurrent = math.floor(current + (f2pamount - daynumber * 100) /(168 - hoursleft) * hoursleft +(7 - daynumber) * 100)
 
-    zstats = zcalc(estimatecurrent - 700, hoursleft,dayNumber)
+    zstats = zcalc(estimatecurrent - 700, hoursleft,daynumber)
 
-    return (7 - dayNumber, estimateaverage, estimatecurrent, zstats, f2pamount - dayNumber * 100)
+    return (7 - daynumber, estimateaverage, estimatecurrent, zstats, f2pamount - daynumber * 100)
 
   def output(results, text):
     if(minutesremaining>0):hoursdone=191-hoursremaining
