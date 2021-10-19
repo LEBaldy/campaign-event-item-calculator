@@ -135,7 +135,7 @@ try:
       else:time=text[6][1]+" into event."
     elif(hoursdone==1):
       if(minutesdone==1):time=text[6][0]+" and "+text[7][0]
-      else:time=text[7][0]+" and "+text[8][1]
+      else:time=text[6][0]+" and "+text[7][1]
     elif(minutesdone==1):time=text[6][1]+" and "+text[7][0]
     else:time=text[6][1]+" and "+text[7][1]
     if(results[3][2]>0):nowodd=[1,results[3][2]]
@@ -143,7 +143,7 @@ try:
     if(results[3][5]>0):currodd=[1,results[3][5]]
     else:currodd=[0,0]
 
-    if(results[4]<=0):outputtext=text[0]+text[1][money]+text[2][spant]+str("\n\nPredicted Item Count (average rate): ")+str(results[1])+str(" Items\nPredicted range: ")+str(math.floor(results[1]-results[3][6]))+str("-")+str(math.floor(results[1]+results[3][6]))+str(" Items\n----------------------------------------------------------")+"You have missed daily rewards this event. A current rate will not be given."
+    if(results[4]<=0):outputtext=text[0]+text[1][money]+text[2][spant]+str("\n\nPredicted Item Count (average rate): ")+str(results[1])+str(" Items\nPredicted range: ")+str(math.floor(results[1]-results[3][6]))+str("-")+str(math.floor(results[1]+results[3][6]))+str(" Items\n----------------------------------------------------------\n")+"You have missed daily rewards this event. A current rate will not be given."
     else:outputtext=text[0]+text[1][money]+text[2][spant]+text[3]+text[4][curr]+text[8][currodd[0]]+text[9][currodd[1]]+text[5][now]+time+text[8][nowodd[0]]+text[9][nowodd[1]]
 
     return(outputtext)
