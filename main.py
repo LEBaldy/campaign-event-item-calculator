@@ -105,7 +105,7 @@ try:
   def campaigncalc(hours, minutes, current, Purchased, Spent):
     f2pamount = current - Purchased + Spent
     hoursleft = hours + minutes / 60 - 24
-    dayNumber = math.ceil(7 - hoursleft / 24)
+    daynumber = math.ceil(7 - hoursleft / 24)
 
     estimateaverage = math.floor(current + hoursleft * 10.56 +(7 - dayNumber) * 100)
     estimatecurrent = math.floor(current + (f2pamount - dayNumber * 100) /(168 - hoursleft) * hoursleft +(7 - dayNumber) * 100)
