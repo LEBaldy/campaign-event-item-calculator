@@ -72,7 +72,7 @@ try:
       if (minutesremaining == 0):
         stdvpredicted = stdv[int(hoursleft - 1)]
       else:
-        stdvpredicted = ((stdv[int(math.ceil(hoursleft) - 1)] -stdv[int(math.floor(hoursleft))]) /(math.ceil(hoursleft) - math.floor(hoursleft))) * (hoursleft - math.floor(hoursleft)) + stdv[int(math.floor(hoursleft) - 1)]
+        stdvpredicted = ((stdv[int(math.ceil(hoursleft) - 1)] -stdv[int(math.floor(hoursleft)-1)]) /(math.ceil(hoursleft) - math.floor(hoursleft))) * (hoursleft - math.floor(hoursleft)) + stdv[int(math.floor(hoursleft) - 1)]
     except Exception as stdvrange:
       pass
       stdvpredicted = 1.05977357360136 * 10 + 6.95546690304286 * 10**(-1) * hoursleft - 1.67571179241219 * 10**(-2) * hoursleft**2 + 5.05383084475387 * 10**(-4) * hoursleft**3 - 1.17803724420283 * 10**(-5) * hoursleft**4 + 1.9390541003977 * 10**(-7) * hoursleft**5 - 2.18168285848933 * 10**(-9) * hoursleft**6 + 1.62938690786485 * 10**(-11) * hoursleft**7 - 7.68703295853448 * 10**(-14) * hoursleft**8 + 2.06664417836592 * 10**(-16) * hoursleft**9 - 2.40708085158142 * 10**(-19) * hoursleft**10
@@ -80,7 +80,7 @@ try:
       if (minutesremaining == 0):
         stdvdone = stdv[int((192 - hoursleft) - 1)]
       else:
-        stdvdone = ((stdv[int(ath.ceil(168 - hoursleft) - 1)] -stdv[int(math.floor(168 - hoursleft))]) /(math.ceil(168 - hoursleft) - math.floor(168 - hoursleft))) * (hoursleft - math.floor(hoursleft)) + stdv[int(math.floor(168 - hoursleft) - 1)]
+        stdvdone = ((stdv[int(ath.ceil(168 - hoursleft) - 1)] -stdv[int(math.floor(168 - hoursleft)-1)]) /(math.ceil(168 - hoursleft) - math.floor(168 - hoursleft))) * (hoursleft - math.floor(hoursleft)) + stdv[int(math.floor(168 - hoursleft) - 1)]
     except Exception as stdvrange:
       pass
       stdvdone = 1.05977357360136 * 10 + 6.95546690304286 * 10**(-1) * (168 - hoursleft) - 1.67571179241219 * 10**(-2) * (168 - hoursleft)**2 + 5.05383084475387 * 10**(-4) * (168 - hoursleft)**3 - 1.17803724420283 * 10**(-5) * (168 -hoursleft)**4 + 1.9390541003977 * 10**(-7) * (168 - hoursleft)**5 - 2.18168285848933 * 10**(-9) * (168 - hoursleft)**6 + 1.62938690786485 * 10**(-11) * (168 - hoursleft)**7 - 7.68703295853448 * 10**(-14) * (168 - hoursleft)**8 + 2.06664417836592 * 10**(-16) * (168 - hoursleft)**9 - 2.40708085158142 * 10**(-19) * (168 - hoursleft)**10
