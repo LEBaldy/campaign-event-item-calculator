@@ -158,7 +158,7 @@ try:
     else:nowodd=[0,0]
     if(results[3][5]>0):currodd=[1,results[3][5]]
     else:currodd=[0,0]
-    if type(custominput)==str or custominput==2500:customprob=""
+    if type(custominput)==str or custominput==2500 or currentamount + itemspurchased >= custominput:customprob=""
     else:customprob=text[11]
     if currentamount + itemspurchased >= 2500:prob2500=""
     else:prob2500=text[10]
