@@ -132,7 +132,7 @@ try:
 
       currperc="\nYou have a {:.3f}% to be {} items {} by the end of the event.".format(zstat[2][0], results[2], zstat[2][1])
       time=f"{timestr(math.floor(192-hours-minutes/60),'hour')}{' and ' if math.floor(192-hours-minutes/60)>0 and minutes%60>0 else ''}{timestr(minutes%60,'hour')} into event."
-      nowperc="\nYou have a {:.3f}% to be {} items {} at {}".format(zstat[0][0], current, zstat[0][1], time)
+      nowperc="\nYou had a {:.3f}% to be {} items {} at {}".format(zstat[0][0], current, zstat[0][1], time)
       currodd=f"\n~~These odds are lower than {odds[zstat[3]]}.~~\n" if zstat[3]>0 else ""
       nowodd=f"\n~~These odds are lower than {odds[zstat[1]]}.~~" if zstat[1]>0 else ""
       
